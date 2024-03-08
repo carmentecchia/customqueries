@@ -32,8 +32,8 @@ public class FlightController {
         }
         return null;
     }
-    @GetMapping("getAll")
-    public List<Flight> getAllFlights() {
-        return flightRepository.findAll();
+    @GetMapping("/getAll")
+    public List<String> getAllFlights() {
+        return flightRepository.retrieveAllFlights();
     }
 }
